@@ -6,7 +6,6 @@
 *.log
 
 # Ignore temporary OS files
-.DS_Store
 .DS_Store?
 .Spotlight-V100
 .Trashes
@@ -17,5 +16,4 @@ debug.log
 node_modules
 
 # Ignore editor config
-.idea/
 .vscode/
