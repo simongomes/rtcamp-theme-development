@@ -1,0 +1,21 @@
+# IDE or OS
+.idea/
+.DS_Store
+
+# Log files
+*.log
+
+# Ignore temporary OS files
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+debug.log
+/node_modules/
+node_modules
+
+# Ignore editor config
+.idea/
+.vscode/
