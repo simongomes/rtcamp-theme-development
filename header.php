@@ -29,14 +29,15 @@
     <div class="container header-wrap">
         <div class="row">
             <div class="col-md-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"
+                <a href="<?php home_url() ?>">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>"
                      alt="Demo Company"/>
+                </a>
             </div>
             <div class="col-md-9">
                 <div class="header-navigation">
                     <nav class="navbar">
-                        <div class="collapse navbar-collapse"
-                             id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">News</a></li>

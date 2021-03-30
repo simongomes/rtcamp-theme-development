@@ -50,7 +50,8 @@ if ( ! function_exists( 'rtcamp_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( [
-				'menu-1' => esc_html__( 'Primary', 'rtcamp' ),
+				'primary' => esc_html__( 'Primary', 'rtcamp' ),
+				'footer' => esc_html__( 'Footer', 'rtcamp' ),
 			] );
 
 		/*
