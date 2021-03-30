@@ -160,6 +160,9 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
+/**
+ * Register Custom Post Types for the Theme
+ */
 require get_template_directory() . '/inc/custom-post-types.php';
 
 /**
