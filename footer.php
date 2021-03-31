@@ -19,16 +19,10 @@
                 <!-- footer navigation start -->
                 <div class="footer-navigation">
                     <nav class="navbar">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Layouts</a></li>
-                            <li><a href="#">Featured</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                        <?php wp_nav_menu([
+                                'menu'          => 'footer',
+                                'menu_class'    => 'nav navbar-nav'
+                        ]) ?>
                     </nav>
                 </div>
                 <!-- footer navigation end -->
