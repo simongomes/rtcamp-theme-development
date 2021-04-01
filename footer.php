@@ -27,7 +27,7 @@
                 </div>
                 <!-- footer navigation end -->
                 <div class="copyright-info">
-                    <p>© 2011 rtPanel. All Rights Reserved. Designed by rtCamp</p>
+                    <p><?php echo esc_html(get_option('copyright_message')); ?></p>
                 </div>
             </div>
             <div class="col-md-5">
