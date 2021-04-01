@@ -23,5 +23,6 @@ get_header();
     <?php get_template_part( '/template-parts/bottom_widgets' ); ?>
 
 <?php
+get_sidebar();
 get_footer();
 

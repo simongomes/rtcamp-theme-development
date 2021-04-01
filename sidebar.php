@@ -7,11 +7,17 @@
  * @package rtCamp_Theme
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'bottom-widgets' ) ) {
 	return;
 }
 ?>
 
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</aside><!-- #secondary -->
+<!-- bottom widgets start -->
+<section id="bottom-widgets">
+    <div class="container bottom-widgets-wrap">
+        <div class="row">
+			<?php dynamic_sidebar( 'bottom-widgets' ); ?>
+        </div>
+    </div>
+</section>
+<!-- bottom widgets end -->

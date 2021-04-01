@@ -113,13 +113,13 @@ add_action( 'after_setup_theme', 'rtcamp_content_width', 0 );
  */
 function rtcamp_widgets_init() {
 	register_sidebar( [
-			'name'          => esc_html__( 'Sidebar', 'rtcamp' ),
-			'id'            => 'sidebar-1',
+			'name'          => esc_html__( 'Bottom Widgets', 'rtcamp' ),
+			'id'            => 'bottom-widgets',
 			'description'   => esc_html__( 'Add widgets here.', 'rtcamp' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_widget' => '<div class="col-md-3"><div id="%1$s" class="widget-wrap %2$s">',
+			'after_widget'  => '</div></div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		] );
 }
 
@@ -164,6 +164,11 @@ require get_template_directory() . '/inc/template-functions.php';
  * Register Theme Settings Page
  */
 require get_template_directory() . '/inc/theme-options.php';
+
+/**
+ * Register Theme Widgets
+ */
+require get_template_directory() . '/inc/custom-widgets.php';
 
 /**
  * Register Custom Post Types for the Theme
