@@ -53,8 +53,9 @@ if ( ! function_exists( 'rtcamp_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary' => esc_html__( 'Primary', 'rtcamp' ),
-				'footer'  => esc_html__( 'Footer', 'rtcamp' ),
+				'primary'      => esc_html__( 'Primary', 'rtcamp' ),
+				'footer'       => esc_html__( 'Footer', 'rtcamp' ),
+				'security_nav' => esc_html__( 'Security navigation', 'rtcamp' ),
 			)
 		);
 

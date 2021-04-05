@@ -20,6 +20,8 @@ class Social_Widget extends WP_Widget {
 	}
 
 	/**
+	 * Setup widget front-end view and feed the widget data
+	 *
 	 * @param  array  $args
 	 * @param  array  $instance
 	 */
@@ -46,6 +48,8 @@ class Social_Widget extends WP_Widget {
 	}
 
 	/**
+	 * Setup widget admin view and input fields to save the data
+	 *
 	 * @param  array  $instance
 	 *
 	 * @return string|void
@@ -53,7 +57,7 @@ class Social_Widget extends WP_Widget {
 	public function form( $instance ) {
 		?>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'widget-title' ) ); ?>">Widget Title:</label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'widget-title' ) ); ?>">Title:</label>
 			<br>
 			<input
 				type="text"
