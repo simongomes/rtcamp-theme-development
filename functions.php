@@ -27,8 +27,10 @@ if ( ! function_exists( 'rtcamp_setup' ) ) :
 		 * If you're building a theme based on rtCamp Theme, use a find and replace
 		 * to change 'rtcamp' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'rtcamp',
-			get_template_directory() . '/languages' );
+		load_theme_textdomain(
+			'rtcamp',
+			get_template_directory() . '/languages'
+		);
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -49,16 +51,20 @@ if ( ! function_exists( 'rtcamp_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( [
+		register_nav_menus(
+			array(
 				'primary' => esc_html__( 'Primary', 'rtcamp' ),
-				'footer' => esc_html__( 'Footer', 'rtcamp' ),
-			] );
+				'footer'  => esc_html__( 'Footer', 'rtcamp' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', [
+		add_theme_support(
+			'html5',
+			array(
 				'search-form',
 				'comment-form',
 				'comment-list',
@@ -66,14 +72,20 @@ if ( ! function_exists( 'rtcamp_setup' ) ) :
 				'caption',
 				'style',
 				'script',
-			] );
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background',
-			apply_filters( 'rtcamp_custom_background_args', [
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'rtcamp_custom_background_args',
+				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
-				] ) );
+				)
+			)
+		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -83,12 +95,15 @@ if ( ! function_exists( 'rtcamp_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support( 'custom-logo', [
+		add_theme_support(
+			'custom-logo',
+			array(
 				'height'      => 250,
 				'width'       => 250,
 				'flex-width'  => true,
 				'flex-height' => true,
-			] );
+			)
+		);
 	}
 endif;
 add_action( 'after_setup_theme', 'rtcamp_setup' );
@@ -112,7 +127,8 @@ add_action( 'after_setup_theme', 'rtcamp_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function rtcamp_widgets_init() {
-	register_sidebar( [
+	register_sidebar(
+		array(
 			'name'          => esc_html__( 'Bottom Widgets', 'rtcamp' ),
 			'id'            => 'bottom-widgets',
 			'description'   => esc_html__( 'Add widgets here.', 'rtcamp' ),
@@ -120,7 +136,8 @@ function rtcamp_widgets_init() {
 			'after_widget'  => '</div></div>',
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',
-		] );
+		)
+	);
 }
 
 add_action( 'widgets_init', 'rtcamp_widgets_init' );
@@ -129,17 +146,25 @@ add_action( 'widgets_init', 'rtcamp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function rtcamp_scripts() {
-	wp_enqueue_style( 'rtcamp-style', get_stylesheet_uri(), [], _S_VERSION );
-	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css', [], _S_VERSION );
-	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/style.css', [], _S_VERSION );
+	wp_enqueue_style( 'rtcamp-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/style.css', array(), _S_VERSION );
 	wp_style_add_data( 'rtcamp-style', 'rtl', 'replace' );
 
-	wp_enqueue_script('bootstrap-js',
-		get_template_directory_uri() . '/assets/js/bootstrap.min.js', ['jquery'], _S_VERSION,
-		true);
-	wp_enqueue_script('main-js',
-		get_template_directory_uri() . '/assets/js/scripts.js', [], _S_VERSION,
-		true);
+	wp_enqueue_script(
+		'bootstrap-js',
+		get_template_directory_uri() . '/assets/js/bootstrap.min.js',
+		array( 'jquery' ),
+		_S_VERSION,
+		true
+	);
+	wp_enqueue_script(
+		'main-js',
+		get_template_directory_uri() . '/assets/js/scripts.js',
+		array(),
+		_S_VERSION,
+		true
+	);
 
 }
 
@@ -186,4 +211,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
