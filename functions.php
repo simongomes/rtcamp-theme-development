@@ -105,6 +105,11 @@ if ( ! function_exists( 'rtcamp_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		/**
+		 * Add Support for page excerpt
+		 */
+		add_theme_support( 'page', 'excerpt' );
 	}
 endif;
 add_action( 'after_setup_theme', 'rtcamp_setup' );

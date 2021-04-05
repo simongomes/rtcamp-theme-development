@@ -46,13 +46,14 @@ $query = new WP_Query(
 											<div class="carousel-caption">
 												<?php the_title( '<h3 class="caption-title">', '</h3>' ); ?>
 												<p class="caption-text">
-													<?php echo esc_html( get_the_excerpt() ); ?>
+													<?php echo wp_kses_post( get_the_excerpt() ); ?>
 												</p>
 											</div>
 										</div>
 										<?php
 									}
 								}
+								wp_reset_postdata();
 								?>
 							</div><!-- .carousel-inner -->
 							<!-- Controls -->

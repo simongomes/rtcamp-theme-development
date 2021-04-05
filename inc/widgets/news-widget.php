@@ -51,6 +51,7 @@ class News_Widget extends WP_Widget {
 			</ul>
 			<?php
 		}
+		wp_reset_postdata();
 		?>
 		<?php
 		echo wp_kses_post( $args['after_widget'] );
