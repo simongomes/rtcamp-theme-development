@@ -443,3 +443,8 @@ li.active:after {
 #footer .footer-logo {
 	margin-top: 12px;
 }
+
+#page-contant-wrapper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
