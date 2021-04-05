@@ -13,32 +13,34 @@
 
 <!-- footer start -->
 <footer id="footer">
-    <div class="container footer-wrap">
-        <div class="row">
-            <div class="col-md-7">
-                <!-- footer navigation start -->
-                <div class="footer-navigation">
-                    <nav class="navbar">
-                        <?php wp_nav_menu([
-                                'menu'          => 'footer',
-                                'menu_class'    => 'nav navbar-nav'
-                        ]) ?>
-                    </nav>
-                </div>
-                <!-- footer navigation end -->
-                <div class="copyright-info">
-                    <p><?php echo esc_html(get_option('copyright_message')); ?></p>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <img
-                        class="footer-logo pull-right"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-logo.png"
-                        alt="Footer Logo"
-                />
-            </div>
-        </div>
-    </div>
+	<div class="container footer-wrap">
+		<div class="row">
+			<div class="col-md-7">
+				<!-- footer navigation start -->
+				<div class="footer-navigation">
+					<nav class="navbar">
+						<?php
+						wp_nav_menu(
+							array(
+								'menu'       => 'footer',
+								'menu_class' => 'nav navbar-nav',
+							)
+						);
+						?>
+					</nav>
+				</div>
+				<!-- footer navigation end -->
+				<div class="copyright-info">
+					<p><?php echo esc_html( get_option( 'copyright_message' ) ); ?></p>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<a href="<?php echo esc_url( home_url() ); ?>">
+					<img class="footer-logo pull-right" src="<?php echo esc_attr( get_option( 'footer_logo' ) ); ?>" alt="<?php esc_html_e( 'Footer Logo', 'rtcamp' ); ?>"/>
+				</a>
+			</div>
+		</div>
+	</div>
 </footer>
 <!-- footer end -->
 </div>

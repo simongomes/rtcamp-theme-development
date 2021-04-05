@@ -7,9 +7,9 @@
  * @package rtCamp_Theme
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if ( ! defined( '_RTCAMP_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_RTCAMP_VERSION', '1.0.0' );
 }
 
 if ( ! function_exists( 'rtcamp_setup' ) ) :
@@ -21,6 +21,10 @@ if ( ! function_exists( 'rtcamp_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function rtcamp_setup() {
+		/**
+		 * Define necessary constants
+		 */
+		define( '__RTCAMP_ASSETS_PATH__', get_template_directory_uri() . '/assets' );
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -152,23 +156,23 @@ add_action( 'widgets_init', 'rtcamp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function rtcamp_scripts() {
-	wp_enqueue_style( 'rtcamp-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), _S_VERSION );
-	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/style.css', array(), _S_VERSION );
+	wp_enqueue_style( 'rtcamp-style', get_stylesheet_uri(), array(), _RTCAMP_VERSION );
+	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), _RTCAMP_VERSION );
+	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/style.css', array(), _RTCAMP_VERSION );
 	wp_style_add_data( 'rtcamp-style', 'rtl', 'replace' );
 
 	wp_enqueue_script(
 		'bootstrap-js',
 		get_template_directory_uri() . '/assets/js/bootstrap.min.js',
 		array( 'jquery' ),
-		_S_VERSION,
+		_RTCAMP_VERSION,
 		true
 	);
 	wp_enqueue_script(
 		'main-js',
 		get_template_directory_uri() . '/assets/js/scripts.js',
 		array(),
-		_S_VERSION,
+		_RTCAMP_VERSION,
 		true
 	);
 
