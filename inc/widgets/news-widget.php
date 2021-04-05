@@ -29,7 +29,8 @@ class News_Widget extends WP_Widget {
 		// Generate the news query
 		$query = new WP_Query(
 			array(
-				'category_name' => 'news',
+				'category_name'  => 'news',
+				'posts_per_page' => 3,
 			)
 		);
 		if ( $query->have_posts() ) {

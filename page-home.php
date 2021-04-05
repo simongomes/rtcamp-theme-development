@@ -14,10 +14,10 @@
 get_header();
 ?>
 	<!-- Import Home Page Slider Section -->
-	<?php get_template_part( '/template-parts/slider', 'home' ); ?>
+<?php get_template_part( '/template-parts/slider', 'home' ); ?>
 
 	<!-- Import Pages Overview Section -->
-	<?php get_template_part( '/template-parts/pages_overview' ); ?>
+<?php get_template_part( '/template-parts/pages_overview' ); ?>
 
 <?php
 // Load Bottom Widgets Using Sidebar
