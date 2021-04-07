@@ -7,6 +7,12 @@
  * Class News_Widget
  */
 class News_Widget extends WP_Widget {
+
+	/**
+	 * News_Widget constructor.
+	 *
+	 * @return void
+	 */
 	public function __construct() {
 		parent::__construct(
 			'latest_news_widget',

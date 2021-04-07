@@ -2,6 +2,8 @@
 /**
  * rtCamp Theme Custom Widgets
  *
+ * This file imports all the custom widgets and registers all the widgets
+ *
  * @package rtCamp_Theme
  */
 

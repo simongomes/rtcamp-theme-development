@@ -23,4 +23,3 @@ get_header();
 // Load Bottom Widgets Using Sidebar
 get_sidebar();
 get_footer();
-

@@ -10,6 +10,8 @@ class Social_Widget extends WP_Widget {
 
 	/**
 	 * Social_Widget constructor.
+	 *
+	 * @return void
 	 */
 	public function __construct() {
 		parent::__construct(

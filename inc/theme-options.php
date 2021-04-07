@@ -134,7 +134,7 @@ if ( ! function_exists( 'rtcamp_register_theme_settings_page' ) ) {
 	/**
 	 * rtCamp Admin Dashboard Scripts
 	 *
-	 * return void
+	 * @return void
 	 */
 	function rtcamp_admin_scripts() {
 		wp_enqueue_media();
