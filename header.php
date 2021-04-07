@@ -38,35 +38,14 @@
 					<div class="header-navigation">
 						<nav class="navbar">
 							<div class="collapse navbar-collapse">
-								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">Home</a></li>
-									<li><a href="#">News</a></li>
-									<li><a href="#">Gallery</a></li>
-									<li><a href="#">Pages</a></li>
-									<li><a href="#">Layouts</a></li>
-									<li><a href="#">Featured</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Contact</a></li>
-									<li class="dropdown">
-										<a
-												href="#"
-												class="dropdown-toggle"
-												data-toggle="dropdown"
-												role="button"
-												aria-haspopup="true"
-												aria-expanded="false"
-										>Dropdown <span class="caret"></span
-											></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a>
-											</li>
-											<li><a href="#">Something else
-													here</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
+								<?php
+									wp_nav_menu(
+										array(
+											'theme_location' => 'primary',
+											'menu_class' => 'nav navbar-nav navbar-right',
+										)
+									);
+									?>
 							</div>
 						</nav>
 					</div>
