@@ -32,7 +32,7 @@ function rtcamp_jetpack_setup() {
 	add_theme_support(
 		'jetpack-content-options',
 		array(
-			'post-details' => array(
+			'post-details'    => array(
 				'stylesheet' => 'rtcamp-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',

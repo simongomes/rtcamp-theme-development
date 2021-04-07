@@ -9,7 +9,7 @@ jQuery( "document" ).ready(
 						"active"
 					);
 					jQuery( this ).addClass( "active" );
-					var elementIndex = jQuery( this ).index();
+					let elementIndex = jQuery( this ).index();
 					jQuery( "#pages-overview-wrapper .pages-content-wrap .item" )
 						.removeClass( "active" );
 					jQuery( "#pages-overview-wrapper .pages-content-wrap .item" )
@@ -20,4 +20,3 @@ jQuery( "document" ).ready(
 		}
 	}
 );
-

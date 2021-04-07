@@ -14,10 +14,10 @@ if ( ! is_active_sidebar( 'bottom-widgets' ) ) {
 
 <!-- bottom widgets start -->
 <section id="bottom-widgets">
-    <div class="container bottom-widgets-wrap">
-        <div class="row">
+	<div class="container bottom-widgets-wrap">
+		<div class="row">
 			<?php dynamic_sidebar( 'bottom-widgets' ); ?>
-        </div>
-    </div>
+		</div>
+	</div>
 </section>
 <!-- bottom widgets end -->
