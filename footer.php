@@ -35,8 +35,12 @@
 				</div>
 			</div>
 			<div class="col-md-5">
-				<a href="<?php echo esc_url( home_url() ); ?>">
-					<img class="footer-logo pull-right" src="<?php echo esc_attr( get_option( 'footer_logo' ) ); ?>" alt="<?php esc_html_e( 'Footer Logo', 'rtcamp' ); ?>"/>
+                <a href="<?php echo esc_url( home_url() ); ?>">
+                    <?php if ( ! get_option( 'footer_logo' ) ) { ?>
+                        <img class="footer-logo pull-right" src="<?php echo esc_attr( get_template_directory_uri() . '/assets/images/footer-logo.png' ); ?>" alt="<?php esc_html_e( 'Footer Logo', 'rtcamp' ); ?>"/>
+					<?php } else { ?>
+                        <img class="footer-logo pull-right" src="<?php echo esc_attr( get_option( 'footer_logo' ) ); ?>" alt="<?php esc_html_e( 'Footer Logo', 'rtcamp' ); ?>"/>
+					<?php } ?>
 				</a>
 			</div>
 		</div>

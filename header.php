@@ -31,7 +31,12 @@
 			<div class="row">
 				<div class="col-md-3">
 					<a href="<?php echo esc_url( home_url() ); ?>">
-						<img src="<?php echo esc_attr( get_option( 'header_logo' ) ); ?>" alt="<?php esc_html_e( 'Header Logo', 'rtcamp' ); ?>"/>
+                        <?php if ( ! get_option( 'header_logo' ) ) { ?>
+                            <img src="<?php echo esc_attr( get_template_directory_uri() . '/assets/images/logo.png' ); ?>" alt="<?php esc_html_e( 'Header Logo', 'rtcamp' ); ?>"/>
+                        <?php
+                        } else { ?>
+                            <img src="<?php echo esc_attr( get_option( 'header_logo' ) ); ?>" alt="<?php esc_html_e( 'Header Logo', 'rtcamp' ); ?>"/>
+                        <?php } ?>
 					</a>
 				</div>
 				<div class="col-md-9">
