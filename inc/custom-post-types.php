@@ -1,17 +1,17 @@
 <?php
 /**
- * rtCamp Theme Custom Post Types
+ * rtCamp Theme Custom Post Types.
  *
  * @package rtCamp_Theme
  */
 
-// Initialize Slider Post Type
+// Initialize Slider Post Type.
 add_action( 'init', 'slider_post_type', 0 );
 
 
 if ( ! function_exists( 'slider_post_type' ) ) {
 	/**
-	 * Setup and Registers Slider Post Type
+	 * Setup and Registers Slider Post Type.
 	 *
 	 * @return void
 	 */

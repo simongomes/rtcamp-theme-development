@@ -197,17 +197,17 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/template-functions.php';
 
 /**
- * Register Theme Settings Page
+ * Register Theme Settings Page.
  */
 require get_template_directory() . '/inc/theme-options.php';
 
 /**
- * Register Theme Widgets
+ * Register Theme Widgets.
  */
 require get_template_directory() . '/inc/custom-widgets.php';
 
 /**
- * Register Custom Post Types for the Theme
+ * Register Custom Post Types for the Theme.
  */
 require get_template_directory() . '/inc/custom-post-types.php';
 

@@ -22,7 +22,7 @@ class News_Widget extends WP_Widget {
 	}
 
 	/**
-	 * Setup widget front-end view and feed the widget data
+	 * Setup widget front-end view and feed the widget data.
 	 *
 	 * @param  array  $args
 	 * @param  array  $instance
@@ -64,7 +64,7 @@ class News_Widget extends WP_Widget {
 	}
 
 	/**
-	 * Setup widget admin view and input fields to save the data
+	 * Setup widget admin view and input fields to save the data.
 	 *
 	 * @param  array  $instance
 	 *

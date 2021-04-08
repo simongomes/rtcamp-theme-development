@@ -1,8 +1,8 @@
 <?php
 /**
- * rtCamp Theme Custom Widgets
+ * rtCamp Theme Custom Widgets.
  *
- * This file imports all the custom widgets and registers all the widgets
+ * This file imports all the custom widgets and registers all the widgets.
  *
  * @package rtCamp_Theme
  */

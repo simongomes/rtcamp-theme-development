@@ -1,11 +1,11 @@
 <?php
 /**
- * rtCamp Theme Settings Page
+ * rtCamp Theme Settings Page.
  *
  * @package rtCamp_Theme
  */
 
-// Register Theme Options Page
+// Register Theme Options Page.
 add_action( 'admin_menu', 'rtcamp_register_theme_settings_page' );
 if ( ! function_exists( 'rtcamp_register_theme_settings_page' ) ) {
 	/**
@@ -51,13 +51,13 @@ if ( ! function_exists( 'rtcamp_register_theme_settings_page' ) ) {
 	}
 
 	/**
-	 * Theme settings option fields
+	 * Theme settings option fields.
 	 *
 	 * @return void
 	 */
 	function rtcamp_theme_options_settings() {
 
-		// Add settings for basic theme info like logo and copyright message
+		// Add settings for basic theme info like logo and copyright message.
 		add_settings_section(
 			'site_information',
 			__( 'Site Information', 'rtcamp' ),
@@ -97,7 +97,7 @@ if ( ! function_exists( 'rtcamp_register_theme_settings_page' ) ) {
 	add_action( 'admin_init', 'rtcamp_theme_options_settings' );
 
 	/**
-	 * Add Copyright theme settings field
+	 * Add Copyright theme settings field.
 	 *
 	 * @return void
 	 */
@@ -108,7 +108,7 @@ if ( ! function_exists( 'rtcamp_register_theme_settings_page' ) ) {
 	}
 
 	/**
-	 * Add Header Logo theme settings field
+	 * Add Header Logo theme settings field.
 	 *
 	 * @return void
 	 */
@@ -120,7 +120,7 @@ if ( ! function_exists( 'rtcamp_register_theme_settings_page' ) ) {
 	}
 
 	/**
-	 * Add Footer Logo theme settings field
+	 * Add Footer Logo theme settings field.
 	 *
 	 * @return void
 	 */
@@ -132,7 +132,7 @@ if ( ! function_exists( 'rtcamp_register_theme_settings_page' ) ) {
 	}
 
 	/**
-	 * rtCamp Admin Dashboard Scripts
+	 * rtCamp Admin Dashboard Scripts.
 	 *
 	 * @return void
 	 */
