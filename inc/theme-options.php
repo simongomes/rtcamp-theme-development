@@ -136,14 +136,16 @@ if ( ! function_exists( 'rtcamp_register_theme_settings_page' ) ) {
 	 *
 	 * @return void
 	 */
-	function rtcamp_admin_scripts() {
-		wp_enqueue_media();
-		wp_enqueue_script(
-			'rtcamp-admin-js',
-			__RTCAMP_ASSETS_PATH__ . '/js/admin-scripts.js',
-			array( 'jquery' ),
-			_RTCAMP_VERSION,
-			true
-		);
-	}
+	function rtcamp_admin_scripts()
+    {
+        wp_enqueue_media();
+        wp_register_script(
+            'rtcamp-admin-js',
+            __RTCAMP_ASSETS_PATH__ . '/js/admin-scripts.js',
+            array('jquery'),
+            _RTCAMP_VERSION,
+            true
+        );
+        wp_enqueue_script('rtcamp-admin-js');
+    }
 }

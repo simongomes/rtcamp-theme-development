@@ -59,7 +59,7 @@ class Social_Widget extends WP_Widget {
 	public function form( $instance ) {
 		?>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'widget-title' ) ); ?>">Title:</label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'widget-title' ) ); ?>"><?php esc_html_e( 'Title:', 'rtcamp' ); ?></label>
 			<br>
 			<input
 				type="text"
@@ -70,7 +70,7 @@ class Social_Widget extends WP_Widget {
 			>
 		</p>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'facebook-link' ) ); ?>">Facebook:</label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'facebook-link' ) ); ?>"><?php esc_attr_e( 'Facebook:', 'rtcamp' ); ?></label>
 			<br>
 			<input
 				type="text"
@@ -81,7 +81,7 @@ class Social_Widget extends WP_Widget {
 			>
 		</p>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'twitter-link' ) ); ?>">Twitter:</label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'twitter-link' ) ); ?>"><?php esc_html_e( 'Twitter:', 'rtcamp' ); ?></label>
 			<br>
 			<input
 				type="text"
@@ -92,7 +92,7 @@ class Social_Widget extends WP_Widget {
 			>
 		</p>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'linkedin-link' ) ); ?>">Linked In:</label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'linkedin-link' ) ); ?>"><?php esc_html_e( 'Linked In:', 'rtcamp' ); ?></label>
 			<br>
 			<input
 				type="text"
@@ -103,7 +103,7 @@ class Social_Widget extends WP_Widget {
 			>
 		</p>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'rss-link' ) ); ?>">RSS:</label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'rss-link' ) ); ?>"><?php esc_html_e( 'RSS:', 'rtcamp' ); ?></label>
 			<br>
 			<input
 				type="text"
