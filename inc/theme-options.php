@@ -146,4 +146,5 @@ if ( ! function_exists( 'rtcamp_register_theme_settings_page' ) ) {
 			true
 		);
 	}
+
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * rtCamp Theme functions and definitions
+ * rtCamp Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
