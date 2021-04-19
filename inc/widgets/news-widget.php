@@ -73,7 +73,7 @@ class News_Widget extends WP_Widget {
 	public function form( $instance ) {
 		?>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'widget-title' ) ); ?>">Title:</label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'widget-title' ) ); ?>"><?php esc_html_e( 'Title:', 'rtcamp' ); ?></label>
 			<br>
 			<input
 					type="text"
