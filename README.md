@@ -1,4 +1,4 @@
-# rtCamp WordPress Theme
+# WordPress Theme
 **Author:** Simon Gomes  
 **Tested up to:** 5.6  
 **License**: GNU GENERAL PUBLIC LICENSE  
